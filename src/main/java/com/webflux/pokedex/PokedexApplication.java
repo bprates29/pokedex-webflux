@@ -21,9 +21,9 @@ public class PokedexApplication {
 
 		return args -> {
 			Flux<Pokemon> pokemonFlux = Flux.just(
-					new Pokemon(null, "Blastoise", "Marisco", "Torrente", 9.0),
-					new Pokemon(null, "Chalizard", "Dragão", "Chama", 9.0),
-					new Pokemon(null, "Cartepie", "Bug", "Churrada", 2.0))
+					new Pokemon(null, "Blastoise", "Shellfish", "Torrent", 9.0),
+					new Pokemon(null, "Charizard", "Flame", "Blaze", 9.0),
+					new Pokemon(null, "Cartepie", "Worm", "Shield Dust", 2.0))
 					.flatMap(repository::save);
 
 			pokemonFlux
